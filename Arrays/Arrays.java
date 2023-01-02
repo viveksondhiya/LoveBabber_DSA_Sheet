@@ -36,4 +36,18 @@ class Reverse
         sb.reverse();
         return sb.toString();
     }
+
+
+    //MAx Min
+    //Given an array A of size N of integers. Your task is to find the sum of minimum and maximum element in the array.
+    
+class Solution
+{ 
+    public static int findSum(int A[],int N) 
+    {
+        //code here
+        Arrays.sort(A);
+        return A[0]+A[N-1];
+    }
+}
 }
